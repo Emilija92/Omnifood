@@ -1,0 +1,22 @@
+{
+  "name": "omnifood",
+  "version": "1.0.0",
+  "description": "App for omnifood",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass scss/style.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emilija92/Omnifood.git"
+  },
+  "author": "Emilija Kovacevic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emilija92/Omnifood/issues"
+  },
+  "homepage": "https://github.com/Emilija92/Omnifood#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

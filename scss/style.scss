@@ -1,0 +1,21 @@
+/* FONTS */
+@import 'fonts/fonts';
+
+/* GLOBAL STYLES */
+@import 'global/variables';
+@import 'global/global';
+@import 'global/mixins';
+@import 'global/typography';
+@import 'global/utilities';
+
+/* LAYOUT */
+@import 'layout/hero';
+@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/footer';
+
+/* MODULES */
+@import 'modules/button';
+
+/* PAGES */
+@import 'pages/home';

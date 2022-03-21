@@ -1,0 +1,35 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    //font-size: 10px; // 1rem=10px
+    /* 10px / 16px = 0.625 = 62.5%*/
+    /* Percentage of user's browser font-size settings*/
+    font-size: 62.5%;
+    
+}
+
+body {
+    line-height: $line-height-default;
+    font-weight: 400;
+    font-family: 'Inter-Regular', sans-serif;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+
+/*
+---  WHITESPACE
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
