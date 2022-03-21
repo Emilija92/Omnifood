@@ -16,7 +16,7 @@ html {
 body {
     line-height: $line-height-default;
     font-weight: 400;
-    font-family: 'Inter-Regular', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: normal;
 }
 
@@ -27,7 +27,11 @@ ul {
     list-style: none;
 }
 
-
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
 /*
 ---  WHITESPACE
 - Spacing system (px)

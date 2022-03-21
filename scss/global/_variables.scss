@@ -1,11 +1,18 @@
 /* Colors variables */
 $bg-color-orange-light: #fdf2e9;
+/* Primary orange colors */
 $primary-color: #e67e22;
 $primary-color-dark: #cf711f;
+
+/* White colors */
 $white-color: #fff;
 $white-color-light: #fdf2e9;
+$white-color-dark: #fae5d3;
+
+/* Grey colors */
 $grey-color: #555;
 $grey-color-dark: #333;
+$grey-color-light: #dddddd;
 
 /*
 --- COLORS
@@ -36,6 +43,9 @@ $grey-color-dark: #333;
 
 /* Fonts sizes */
 $font-size-largest: 5.2rem;
+$font-size-large: 4.4rem;
+$font-size-medium: 3rem;
+$font-size-small: 1.6rem;
 
 
 
@@ -66,7 +76,8 @@ $letter-spacing-medium: 0.75px;
 
 
 /* Padding */
-$padding: 4.8rem 0 9.6rem 0;
+$padding-small-on-top: 4.8rem 0 9.6rem 0;
+$padding: 9.6rem 0;
 
 
 /* Transition */
