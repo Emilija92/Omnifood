@@ -7,7 +7,7 @@
 	align-items: $align-items;
 }
 
-@mixin flexCenter($justify-content, $align-items) {
+@mixin flex($justify-content, $align-items) {
 	display: flex;
 	justify-content: $justify-content;
 	align-items: $align-items;

@@ -15,7 +15,7 @@
     line-height: 1.8;
 }
 .step-img-box {
-    @include flexCenter(center, center);
+    @include flex(center, center);
     position: relative;
     &::before {
         content: "";

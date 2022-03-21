@@ -1,0 +1,12 @@
+.section-featured {
+    padding: $padding-small-at-bottom;
+}
+.logos {
+    @include flex(space-around, center);
+    
+}
+.logos-img {
+    height: 3.2rem;
+    filter: brightness(0);
+    opacity: .5;
+}
