@@ -1,0 +1,26 @@
+.delivered-meals {
+    display: flex;
+    margin-top: 8rem;
+    align-items: center;
+    gap: 1.6rem;
+}
+.delivered-imgs {
+    display: flex;
+}
+.customers {
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 50%;
+    border: 3px solid $bg-color-orange-light;
+    &:not(:last-child) {
+        margin-right: -1.6rem;
+    }
+}
+.delivered-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.delivered-text span {
+    color: $primary-color-dark;
+    font-weight: 700;
+}
