@@ -5,6 +5,7 @@ $primary-color-dark: #cf711f;
 $white-color: #fff;
 $white-color-light: #fdf2e9;
 $grey-color: #555;
+$grey-color-dark: #333;
 
 /*
 --- COLORS
@@ -24,28 +25,19 @@ $grey-color: #555;
 #6f6f6f (lightest grey allowed on #fdf2e9)
 #555
 #333
+*/
 
+
+/*
 --- SHADOWS
 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
----  BORDER-RADIUS
-Default: 9px
-Medium: 11px
-
-- Line heights
-Default: 1
-Small: 1.05
-Medium: 1.2
-Paragraph default: 1.6
-
-- Letter spacing
--0.5px
-0.75px
-
 */
 
-/* Fonts variables */
+/* Fonts sizes */
 $font-size-largest: 5.2rem;
+
+
 
 /* line-height */
 $line-height-default: 1;
@@ -53,12 +45,40 @@ $line-height-small: 1.05;
 $line-height-medium: 1.2;
 $line-height-paragraph: 1.6;
 
+/*
+--- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+*/
 
-/* Letter-spacing*/
+
+/* Letter-spacing */
 $letter-spacing-small: -0.5px;
 $letter-spacing-medium: 0.75px;
+/*
+--- Letter spacing
+-0.5px
+0.75px
+*/
+
 
 
 /* Padding */
-$padding: 9.6rem 0;
+$padding: 4.8rem 0 9.6rem 0;
 
+
+/* Transition */
+$transition: all .3s;
+
+
+/*
+--- border-radius
+Default: 9px
+Medium: 11px
+*/
+
+/* Border radius */
+$border-radius-default: 9px;
+$border-radius-medium: 11px;

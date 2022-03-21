@@ -6,7 +6,7 @@
     color: $white-color;
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
-    transition: all .3s;
+    transition: $transition;
 }
 .btn--full:link,
 .btn--full:visited {
