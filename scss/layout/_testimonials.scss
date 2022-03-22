@@ -1,0 +1,48 @@
+.section-testimonials {
+    @include grid(55fr 45fr,center);
+    gap: 0;
+    background-color: $bg-color-orange-light;
+}
+
+.testimonials-container {
+    padding: $padding-all-sides;
+}
+
+.testimonials {
+    @include gridSmall(repeat(2,1fr),4.8rem,8rem);
+}
+
+.testimonial-img {
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+    font-size: $font-size-default;
+    line-height: $line-height-big;
+    margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+    font-size: $font-size-small;
+    color: $grey-color-light2;
+}
+
+.gallery {
+    @include gridSmall(repeat(3,1fr),1.6rem,1.6rem);
+    padding: 1.6rem;
+}
+
+.gallery-item {
+    overflow: hidden;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    transition: $transition;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
