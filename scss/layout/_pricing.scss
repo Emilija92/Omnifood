@@ -1,0 +1,77 @@
+.section-pricing {
+    padding: $padding;
+}
+
+.grid-pricing {
+    @include grid(repeat(2,1fr),flex-start);
+}
+
+.pricing-plan {
+    border-radius: $border-radius-medium;
+    width: 75%;
+}
+
+.pricing-plan--starter {
+    justify-self: end;
+    border: 3px solid $bg-color-orange-light;
+    padding: 4.5rem;
+}
+
+.pricing-plan--complete {
+    background-color: $bg-color-orange-light;
+    padding: $padding-all-sides-small;
+    position: relative;
+    overflow: hidden;
+    &::after {
+        content: "Best value";
+        position: absolute;
+        top: 6%;
+        right: -18%;
+        background-color: $yellow-color;
+        color: $grey-color-dark;
+        padding: .8rem 8rem;
+        text-transform: uppercase;
+        font-size: $font-size-smaller;
+        font-weight: 700;
+        transform: rotate(45deg);
+
+    }
+}
+
+.plan-header {
+    text-align: center;
+    margin-bottom: 4.8rem;
+}
+
+.plan-name {
+    color: $primary-color-dark;
+    font-weight: 700;
+    font-size: $font-size-medium-small;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing-medium;
+    margin-bottom: 3.2rem;
+}
+
+.plan-price {
+    font-size: 6.2rem;
+    font-weight: 700;
+    color: $grey-color-dark;
+    margin-bottom: 1.6rem;
+    & span {
+        font-size: $font-size-medium;
+        font-weight: 500;
+        margin-right: .8rem;
+    }
+}
+
+.plan-text {
+    font-size: $font-size-small;
+    line-height: $line-height-paragraph;
+    color: $grey-color-light2;
+
+}
+
+.plan-sign-up {
+    text-align: center;
+    margin-top: 4.8rem;
+}

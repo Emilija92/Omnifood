@@ -74,23 +74,6 @@
     width: 100%;
 }
 
-.list {
-    @include flexColumn(1.6rem);
-}
-
-.list-item {
-    font-size: 1.8rem;
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
-}
-
-.list-icon {
-    width: 30px;
-    height: 30px;
-    color: $primary-color-dark;
-}
-
 .all-recipes {
     font-size: 2rem;
     text-align: center;

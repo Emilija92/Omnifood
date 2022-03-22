@@ -8,6 +8,12 @@
 @import 'global/typography';
 @import 'global/utilities';
 
+
+/* MODULES */
+@import 'modules/button';
+@import 'modules/link';
+@import 'modules/list';
+
 /* LAYOUT */
 @import 'layout/hero';
 @import 'layout/delivered-meals';
@@ -17,11 +23,10 @@
 @import 'layout/featured';
 @import 'layout/meals';
 @import 'layout/testimonials';
+@import 'layout/pricing';
 @import 'layout/footer';
 
-/* MODULES */
-@import 'modules/button';
-@import 'modules/link';
+
 
 /* PAGES */
 @import 'pages/home';
