@@ -12,7 +12,11 @@
 	justify-content: $justify-content;
 	align-items: $align-items;
 }
-
+@mixin flexColumn($gap) {
+	display: flex;
+	flex-direction: column;
+	gap: $gap;
+}
 // To include use @include breakpoint ($value)
 @mixin bp ($value) {
 	@if $value == 'phone' {

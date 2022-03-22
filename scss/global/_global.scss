@@ -10,7 +10,6 @@ html {
     /* 10px / 16px = 0.625 = 62.5%*/
     /* Percentage of user's browser font-size settings*/
     font-size: 62.5%;
-    
 }
 
 body {
@@ -32,8 +31,12 @@ ul {
     margin: 0 auto;
     padding: 0 3.2rem;
 }
+
+strong {
+    font-weight: 500;
+}
+
 /*
----  WHITESPACE
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */

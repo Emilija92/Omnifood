@@ -1,7 +1,7 @@
 .section-how {
     padding: $padding;
 }
-.grid {
+.grid-how {
     @include grid(repeat(2,1fr), center);
 }
 .step-number {

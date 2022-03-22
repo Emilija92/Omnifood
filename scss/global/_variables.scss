@@ -1,5 +1,8 @@
-/* Colors variables */
+/* COLORS */
+
+/* Background colors */
 $bg-color-orange-light: #fdf2e9;
+
 /* Primary orange colors */
 $primary-color: #e67e22;
 $primary-color-dark: #cf711f;
@@ -14,6 +17,12 @@ $grey-color: #555;
 $grey-color-dark: #333;
 $grey-color-light: #dddddd;
 $grey-color-light2: #888;
+
+/* Other colors */
+$green-color: #51cf66;
+$green-color-lime: #94d82d;
+$yellow-color: #ffd43b;
+
 
 /*
 --- COLORS
@@ -36,11 +45,8 @@ $grey-color-light2: #888;
 */
 
 
-/*
---- SHADOWS
-0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-
-*/
+/* Shadows */
+$shadow: 0 2.4rem 4.8rem rgba(0,0,0,.1);
 
 /* Fonts sizes */
 $font-size-largest: 5.2rem;
@@ -57,24 +63,10 @@ $line-height-small: 1.05;
 $line-height-medium: 1.2;
 $line-height-paragraph: 1.6;
 
-/*
---- Line heights
-Default: 1
-Small: 1.05
-Medium: 1.2
-Paragraph default: 1.6
-*/
-
 
 /* Letter-spacing */
 $letter-spacing-small: -0.5px;
 $letter-spacing-medium: 0.75px;
-/*
---- Letter spacing
--0.5px
-0.75px
-*/
-
 
 
 /* Padding */
@@ -82,17 +74,12 @@ $padding-small-on-top: 4.8rem 0 9.6rem 0;
 $padding-small-at-bottom: 4.8rem 0 3.2rem 0;
 $padding: 9.6rem 0;
 $padding-small: 4.8rem 0;
+$padding-smallest: 0.4rem 0.8rem;
 
 
 /* Transition */
 $transition: all .3s;
 
-
-/*
---- border-radius
-Default: 9px
-Medium: 11px
-*/
 
 /* Border radius */
 $border-radius-default: 9px;
