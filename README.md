@@ -1,5 +1,5 @@
 # Omnifood
-https://github.com/jonasschmedtmann
+
 Omnifood project
 Omnifood
 About Omnifood
@@ -83,3 +83,4 @@ Social profiles: instagram, facebook, twitter [links to them not available yet]
 
 Additional links [links not available yet]
 Create account Sign in iOS app Android app About Omnifood For Business Cooking partners Careers Recipe directory Help center Privacy & terms
+https://github.com/jonasschmedtmann
