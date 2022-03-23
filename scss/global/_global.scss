@@ -36,7 +36,9 @@ strong {
     font-weight: 500;
 }
 
-/*
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/
+*:focus {
+    outline: none;
+    // outline: 4px dotted $primary-color;
+    // outline-offset: 8px;
+    box-shadow: 0 0 0 .8rem $primary-color;
+}

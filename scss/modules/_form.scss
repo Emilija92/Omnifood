@@ -1,0 +1,45 @@
+.cta-form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+    font-family: inherit;
+    & *:focus {
+        outline: none;
+        box-shadow: 0 0 0 .8rem $yellow-color;
+    }
+}
+
+.form-label {
+    display: block;
+    font-size: $font-size-small;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+}
+
+.form-input,
+.form-select {   
+    width: 100%;
+    padding: 1.2rem;
+    font-size: $font-size-default;
+    color: inherit;
+    border: none;
+    background-color: $bg-color-orange-light;
+    border-radius: $border-radius-default;
+    box-shadow: $shadow;
+    &::placeholder {
+        color: $grey-color-light2;
+    }
+}
+
+.form-btn {
+    background-color: $primary-color-dark2;
+    color: $bg-color-orange-light;
+    align-self: end;
+    padding: 1.2rem;
+    &:hover {
+        background-color: $white-color;
+        color: $grey-color;
+    }
+}
+
