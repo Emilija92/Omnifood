@@ -1,0 +1,70 @@
+.footer {
+    padding: $padding-footer;
+    border-top: 1px solid $grey-color-light;
+}
+
+.grid-footer {
+    @include grid(1.5fr 1.5fr 1fr 1fr 1fr,stretch);
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.copyright {
+    font-size: $font-size-smaller;
+    color: $grey-color-light3;
+    line-height: $line-height-paragraph;
+    margin-top: auto;
+}
+
+.footer-heading {
+    font-size: $font-size-default;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.contacts {
+    font-style: normal;
+    font-size: $font-size-small;
+    line-height: $line-height-paragraph;
+}
+
+.address {
+    margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+    @include flexColumn(2.4rem);
+}
+
+.footer-link:link,
+.footer-link:visited {
+    font-size: $font-size-small;
+    color: $grey-color-light3;
+    transition: $transition;
+}
+
+.footer-link {
+    &:hover,
+    &:active {
+        color: $grey-color;
+    }
+}
+
