@@ -13,6 +13,9 @@ btnNav.addEventListener('click', function() {
     if(headerEl.classList.contains('nav-open')) {
         document.body.classList.add('scroll-hidden');
         document.html.classList.add('scroll-hidden');
+    } else {
+        document.body.classList.remove('scroll-hidden');
+        document.html.classList.remove('scroll-hidden');
     }
 })
 
