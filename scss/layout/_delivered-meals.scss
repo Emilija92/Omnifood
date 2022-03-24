@@ -3,6 +3,10 @@
     margin-top: 8rem;
     align-items: center;
     gap: 1.6rem;
+    @include bp('tablet') {
+        justify-content: center;
+        margin-top: 3.2rem;
+    }
 }
 .delivered-imgs {
     display: flex;

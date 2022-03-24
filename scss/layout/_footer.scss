@@ -5,11 +5,30 @@
 
 .grid-footer {
     @include grid(1.5fr 1.5fr 1fr 1fr 1fr,stretch);
+
+    @include bp('phone') {
+        @include grid(repeat(6,1fr),center);
+    }
 }
 
 .logo-col {
     display: flex;
     flex-direction: column;
+    @include bp('phone') {
+        grid-column: span 3;
+    }
+}
+.address-col {
+    @include bp('phone') {
+        grid-column: span 3;
+    }
+}
+.nav-col {
+    @include bp('phone') {
+        grid-row: 1;
+        grid-column: span 2;
+        margin-bottom: 3.2rem;
+    }
 }
 
 .footer-logo {

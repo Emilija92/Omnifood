@@ -26,18 +26,43 @@ h1,
     font-size: $font-size-largest;
     line-height: $line-height-small;
     margin-bottom: 3.2rem;
+
+    @include bp('desktop-m') {
+        font-size: $font-size-large;
+    }
 }
+
+
 h2,
 .heading-secondary {
     font-size: $font-size-large;
     line-height: $line-height-medium;
     margin-bottom: 9.6rem;
+
+    @include bp('desktop-s') {
+        font-size: 3.6rem;
+    }
+    @include bp('touch') {
+        font-size: 3.6rem;
+    }
+    @include bp('phone') {
+        margin-bottom: 4.8rem;
+    }
 }
+
+
 h3, 
 .heading-tertiary {
     font-size: $font-size-medium;
     line-height: $line-height-medium;
     margin-bottom: 3.2rem;
+
+    @include bp('desktop-s') {
+        font-size: 2.4em;
+    }
+    @include bp('touch') {
+        font-size: 2.4rem;
+    }
 }
 
 .subheading {

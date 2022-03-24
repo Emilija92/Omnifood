@@ -9,4 +9,10 @@
     height: 3.2rem;
     filter: brightness(0);
     opacity: .5;
+    @include bp('tablet') {
+        height: 2.4rem;
+    }
+    @include bp('phone-s') {
+		height: 1.2rem;
+	}
 }

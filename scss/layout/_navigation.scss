@@ -1,16 +1,45 @@
+.main-nav {
+    transition: all .5s ease-in;
+    @include bp('touch') {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+        background-color: rgba(255, 255, 255, 0.103);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+}
+
 .main-nav-list {
     display: flex;
-    gap: 3.2rem;
+    gap: 4.8rem;
     align-items: center;
+    @include bp('desktop-s') {
+        gap: 3.2rem;
+    }
+    @include bp('touch') {
+        flex-direction: column;
+    }
 }
 .main-nav-link:link,
 .main-nav-link:visited {
     display: inline-block;
     color: $grey-color-dark;
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: $font-size-default;
     transition: $transition;
+    @include bp('touch') {
+        font-size: $font-size-medium;
+    }
 }
+
 .main-nav-link {
     &:hover,
     &:active {
@@ -29,4 +58,63 @@
     &:active {
         background-color: $primary-color-dark;
     }
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+    @include bp('touch') {
+        display: block;
+        z-index: 9999;
+    }
+}
+.icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: $grey-color;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
+}
+
+.nav-open .icon-mobile-nav[name="close-outline"] {
+    @include bp('touch') {
+        display: block;
+    }
+}
+
+.nav-open .icon-mobile-nav[name="menu-outline"] {
+    @include bp('touch') {
+        display: none;
+    }
+}
+
+.nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/* STICKY NAV */
+
+.sticky .header {
+    position: fixed !important;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    z-index: 999 !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    box-shadow: 0 1.2rem 3.2rem rgba(0,0,0,.03);
+}
+
+.sticky .section-hero {
+    margin-top: 9.6rem;
 }

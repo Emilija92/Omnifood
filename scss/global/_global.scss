@@ -10,6 +10,21 @@ html {
     /* 10px / 16px = 0.625 = 62.5%*/
     /* Percentage of user's browser font-size settings*/
     font-size: 62.5%;
+    overflow-x: hidden;
+    // scroll-behavior: smooth;
+
+    @include bp('desktop-s') {
+        //font-size: 9px;
+        font-size: 56.25%;
+    }
+    @include bp('touch') {
+        //font-size: 9px;
+        font-size: 56.25%;
+    }
+    @include bp('tablet') {
+        //font-size: 8px;
+        font-size: 50%;
+    }
 }
 
 body {
@@ -17,6 +32,7 @@ body {
     font-weight: 400;
     font-family: 'Inter', sans-serif;
     font-weight: normal;
+    overflow-x: hidden;
 }
 
 a {

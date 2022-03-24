@@ -10,6 +10,9 @@
     transition: $transition;
     border: none;
     cursor: pointer;
+    @include bp('phone-s') {
+		padding: 2.4rem 1.6rem;
+	}
 }
 .btn {
     color: inherit;

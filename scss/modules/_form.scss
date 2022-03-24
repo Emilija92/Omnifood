@@ -1,6 +1,12 @@
 .cta-form {
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    @include bp('tablet') {
+        grid-template-columns: 1fr;
+    }
+    @include bp('phone') {
+        grid-template-columns: 1fr;
+    }
     column-gap: 3.2rem;
     row-gap: 2.4rem;
     font-family: inherit;
@@ -40,6 +46,9 @@
     &:hover {
         background-color: $white-color;
         color: $grey-color;
+    }
+    @include bp('tablet') {
+        margin-top: 1.2rem;
     }
 }
 

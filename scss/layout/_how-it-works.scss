@@ -3,12 +3,19 @@
 }
 .grid-how {
     @include grid(repeat(2,1fr), center);
+
+    @include bp('phone-s') {
+		@include grid(1fr,center);
+	}
 }
 .step-number {
     font-size: 8.6rem;
     font-weight: 700;
     color: $grey-color-light;
     margin-bottom: 1.2rem;
+    @include bp('tablet') {
+        font-size: 7.4rem;
+    }
 }
 .step-description {
     font-size: 1.8rem;
@@ -43,8 +50,18 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: -1;
-
     }
+
+    @include bp('phone-s') {
+		&:nth-child(2) {
+            grid-row: 1;
+        }
+        &:nth-child(6) {
+            grid-row: 5;
+        }
+        transform: transleteY(2.4rem);
+        
+	}
 }
 .step-img {
     width: 35%;

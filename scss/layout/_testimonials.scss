@@ -2,14 +2,29 @@
     @include grid(55fr 45fr,center);
     gap: 0;
     background-color: $bg-color-orange-light;
+    @include bp('tablet') {
+        @include grid(1fr,center);
+    }
+    @include bp('phone') {
+        @include grid(1fr,center);
+    }
 }
 
 .testimonials-container {
     padding: $padding-all-sides;
+    @include bp('desktop-s') {
+        padding: 9.6rem 3.2rem;
+    }
+    @include bp('touch') {
+        padding: 9.6rem 3.2rem;
+    }
 }
 
 .testimonials {
     @include gridSmall(repeat(2,1fr),4.8rem,8rem);
+    @include bp('phone-s') {
+		@include gridSmall(1fr,4.8rem,8rem);
+	}
 }
 
 .testimonial-img {
@@ -32,6 +47,24 @@
 .gallery {
     @include gridSmall(repeat(3,1fr),1.6rem,1.6rem);
     padding: 1.6rem;
+    @include bp('desktop-m') {
+        @include gridSmall(repeat(2,1fr),1.6rem,1.6rem);
+    }
+    @include bp('desktop-s') {
+        @include gridSmall(repeat(2,1fr),1.6rem,1.6rem);
+    }
+    @include bp('touch') {
+        @include gridSmall(repeat(2,1fr),1.6rem,1.6rem);
+    }
+    @include bp('tablet') {
+        @include gridSmall(repeat(6,1fr),1.6rem,1.6rem);
+    }
+    @include bp('phone') {
+        @include gridSmall(repeat(6,1fr),1.6rem,1.6rem);
+    }
+    @include bp('phone-s') {
+		@include gridSmall(repeat(4,1fr),1.2rem,1.2rem);
+	}
 }
 
 .gallery-item {

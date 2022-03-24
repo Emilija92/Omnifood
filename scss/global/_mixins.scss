@@ -6,6 +6,13 @@
 	column-gap: 6.4rem;
 	grid-template-columns: $grid-template-columns;
 	align-items: $align-items;
+	@include bp('desktop-s') {
+		column-gap: 4.8rem;
+		row-gap: 6.4rem;
+	}
+	@include bp('phone-s') {
+		row-gap: 4.8rem;
+	}
 }
 
 @mixin gridSmall($grid-template-columns,$row-gap,$column-gap) {
@@ -30,14 +37,18 @@
 
 // To include use @include breakpoint ($value)
 @mixin bp ($value) {
-	@if $value == 'phone' {
+	@if $value == 'phone-s' {
+		@media only screen and (max-width: 550px) { @content; }
+	}@else if $value == 'phone' {
 		@media only screen and (max-width: 767px) { @content; }
 	} @else if $value == 'tablet' {
 		@media only screen and (min-width: 768px) and (max-width: 1024px) { @content; }
 	} @else if $value == 'touch' { //phone and tablet
 		@media only screen and (max-width: 1024px) { @content; }
 	}@else if $value == 'desktop-s' { //phone and tablet
-		@media only screen and (max-width: 1200px) { @content; }
+		@media only screen and (min-width: 1025px) and (max-width: 1200px) { @content; }
+	} @else if $value == 'desktop-m' {
+		@media only screen and (min-width: 1201px) and (max-width: 1360px) { @content; }
 	} @else {
 		@media only screen and (max-width: $value) { @content; }
 	}
