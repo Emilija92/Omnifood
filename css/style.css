@@ -465,7 +465,8 @@ h3,
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
-  transform: translateX(0); }
+  transform: translateX(0);
+  background-color: #fdf2e9; }
 
 /* STICKY NAV */
 .sticky .header {
