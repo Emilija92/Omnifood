@@ -11,12 +11,9 @@ const headerEl = document.querySelector('.header');
 btnNav.addEventListener('click', function() {
     headerEl.classList.toggle('nav-open');
     if(headerEl.classList.contains('nav-open')) {
-        document.body.classList.add('scroll-hidden');
-        document.html.classList.add('scroll-hidden');
-    } else {
-        document.body.classList.remove('scroll-hidden');
-        document.html.classList.remove('scroll-hidden');
-    }
+        document.body.classList.toggle('scroll-hidden');
+        document.html.classList.toggle('scroll-hidden');
+    } 
 })
 
 
