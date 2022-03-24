@@ -10,7 +10,11 @@ const headerEl = document.querySelector('.header');
 
 btnNav.addEventListener('click', function() {
     headerEl.classList.toggle('nav-open');
+    if(headerEl.classList.contains('nav-open')) {
+        body.classList.add('body');
+    }
 })
+
 
 ////////// SMOOTH SCROLLING//////////
 
